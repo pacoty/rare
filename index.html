@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body style="background-color: #00bfa5 !important;">
+ 
+  <div class="row" style="margin-top: 100px !important;">
+    <div class="container center-align">
+
+      <div class="s12 m8 l6">
+        <h3 style="color: #fff !important;">Localizar Pedido</h3>
+        <p style="color: #fff !important;">Para consultar o status do seu pedido digite apenas os números do CPF do comprador sem pontos e traços, você vai receber no seu Whatsapp e e-mail automaticamente o código de rastreamento e será redirecionado após clicar no botão para pagina do resumo da sua compra.</p>
+      </div>
+    
+      <form class="col s12 m12 l12" action="https://hook.integromat.com/50x3g48wfno4pkax1x5o6tclxysnrtiw" method="post">
+        <input type="hidden" id="redirect" name="redirect" value="redirect">
+
+        <div class="col s12 m12 l4"></div>
+
+        <div class="input-field col s12 m8 l4">
+          <textarea style="color: #fff !important;" id="textarea1" name="text" class="materialize-textarea" style="font-size: 20px !important; font-weight: 700 !important;"></textarea>
+          <label style="color: #fff !important; text-align: center;" for="textarea1">DIGITE O CPF DO COMPRADOR:</label>
+        </div>
+
+        <div class="center-align col s12" style="margin-top: 2% !important;">
+          <button class="waves-effect waves-light btn-large" type="submit" style="background-color: #075E54; font-size: 1.2rem; min-height: 48px !important; color: #fff !important;">LOCALIZAR AGORA</button>
+        </div>
+        </form>
+
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
