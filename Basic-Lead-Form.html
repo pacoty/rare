@@ -1,0 +1,50 @@
+<!doctype html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# video: http://ogp.me/ns/video#">
+<meta charset="utf-8" />
+<title>Basic Lead Form</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+</head>
+<body>
+
+<div class="container pt-5">
+  <div class="row justify-content-center">
+    <div class="col col-sm-12 col-md-5 col-lg-4 center-block text-center">
+      <h1>Rastreamento</h1>
+      <p>Informe os dados do comprador corretamente para receber os dados do pedido automaticamente no Whatsapp.</p>
+
+
+
+      <!-- HERE'S THE FORM! -->
+      <!-- the form action needs to point to your Integromat webhook -->
+      <form action="https://hook.integromat.com/3orhtuco8p2ni663qhrrrl3dezp2s98v" method="post">
+        <!-- don't forget the redirect field for Integromat -->
+        <input type="hidden" id="redirect" name="redirect" value="https://wa.me/5514996683388">
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Nome do comprador" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email do comprador" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="CPF do comprador" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Enviar para meu Whatsapp</button>
+        </div>
+      </form>
+      <!-- END FORM -->
+
+    </div>
+  </div>
+  
+  </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
